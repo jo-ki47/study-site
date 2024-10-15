@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結果 - 臨床工学技士 国家試験</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .correct {
+            background-color: #28a745; /* 緑 */
+            color: white;
+        }
+        .wrong {
+            background-color: #dc3545; /* 赤 */
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        #restart-btn {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>結果</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>設問番号</th>
+                    <th>選択した回答</th>
+                    <th>正解</th>
+                    <th>正誤</th>
+                    <th>出題分野</th>
+                </tr>
+            </thead>
+            <tbody id="results"></tbody>
+        </table>
+        <button id="restart-btn" class="next-btn">もう一度やり直す</button>
+    </div>
+    <script src="results.js"></script>
+</body>
+</html>
